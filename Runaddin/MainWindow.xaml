@@ -1,0 +1,132 @@
+﻿<Window x:Class="ExecutableProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Revit Plugin Installer" Height="241" Width="400"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5"
+        ResizeMode="NoResize"
+        MinWidth="400" MaxWidth="400"
+        MinHeight="350" MaxHeight="300">
+    <Grid Margin="20">
+        <!-- Title -->
+        <TextBlock Text="Revit Plugin Installer" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top" 
+                   Margin="0,10,0,20"/>
+
+        <!-- Revit Version Label -->
+        <Label Content="Revit Version:" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="26,40,0,0" 
+               FontSize="14" 
+               FontWeight="SemiBold"/>
+
+        <!-- Revit Version ComboBox -->
+        <ComboBox Name="RevitVersionComboBox" 
+                  HorizontalAlignment="Left" 
+                  VerticalAlignment="Top" 
+                  Width="200" 
+                  Margin="136,40,0,0" 
+                  FontSize="14" 
+                  Padding="5">
+
+            <ComboBoxItem Content="2025"/>
+            <ComboBoxItem Content="2024"/>
+            <ComboBoxItem Content="2023"/>
+            <ComboBoxItem Content="2022"/>
+            <ComboBoxItem Content="2021"/>
+            <ComboBoxItem Content="2020"/>
+            <!-- Add other versions as needed -->
+        </ComboBox>
+
+        <!-- Install Button -->
+        <Button Name="InstallButton" 
+                Content="Install Plugin" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Margin="0,91,0,0" 
+                Background="#4CAF50" 
+                Foreground="White" 
+                FontSize="14" 
+                FontWeight="Bold" 
+                Padding="10,5"
+                BorderBrush="#388E3C" 
+                BorderThickness="1" 
+                Click="InstallButton_Click"/>
+
+        <!-- Delete Button -->
+        <Button Name="DeleteButton" 
+                Content="Delete Plugin" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Margin="180,91,0,0" 
+                Background="#F44336" 
+                Foreground="White" 
+                FontSize="14" 
+                FontWeight="Bold" 
+                Padding="10,5"
+                BorderBrush="#D32F2F" 
+                BorderThickness="1" 
+                Visibility="Collapsed"
+                Click="DeleteButton_Click"/>
+
+        <!-- Repair Button -->
+        <Button Name="RepairButton" 
+                Content="Repair Plugin" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Margin="10,91,0,0" 
+                Background="#FF9800" 
+                Foreground="White" 
+                FontSize="14" 
+                FontWeight="Bold" 
+                Padding="10,5"
+                BorderBrush="#F57C00" 
+                BorderThickness="1" 
+                Visibility="Collapsed"
+                Click="RepairButton_Click"/>
+
+        <!-- Status TextBlock -->
+        <TextBlock Name="StatusTextBlock" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,140,0,0" 
+                   FontSize="14" 
+                   FontWeight="SemiBold" 
+                   Foreground="#616161" 
+                   Text="Status: Idle" 
+                   Width="325"/>
+        <!-- Close Button -->
+        <Button Name="CloseButton" 
+        Content="Close" 
+        HorizontalAlignment="Center" 
+        VerticalAlignment="Top" 
+        Width="150" 
+        Margin="0,203,0,0" 
+        Background="#757575" 
+        Foreground="White" 
+        FontSize="14" 
+        FontWeight="Bold" 
+        Padding="10,5"
+        BorderBrush="#424242" 
+        BorderThickness="1" 
+        Visibility="Collapsed"
+        Click="CloseButton_Click"/>
+
+        <!-- Loading Progress Bar -->
+        <ProgressBar Name="LoadingProgressBar" 
+                     HorizontalAlignment="Center" 
+                     VerticalAlignment="Top" 
+                     Margin="0,180,0,0" 
+                     Height="20" 
+                     Width="310" 
+                     IsIndeterminate="True" 
+                     Visibility="Collapsed"/>
+    </Grid>
+</Window>

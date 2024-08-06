@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRevitPlugin", "MyRevitPlugin\MyRevitPlugin.csproj", "{EF37A5A4-B829-49B5-973C-965CD9BD21C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runaddin", "Runaddin\Runaddin.csproj", "{772BD3D5-53D0-40BD-88BB-61A6B264031D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF37A5A4-B829-49B5-973C-965CD9BD21C3}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{EF37A5A4-B829-49B5-973C-965CD9BD21C3}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{EF37A5A4-B829-49B5-973C-965CD9BD21C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF37A5A4-B829-49B5-973C-965CD9BD21C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772BD3D5-53D0-40BD-88BB-61A6B264031D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772BD3D5-53D0-40BD-88BB-61A6B264031D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772BD3D5-53D0-40BD-88BB-61A6B264031D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772BD3D5-53D0-40BD-88BB-61A6B264031D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FF73031-EBD9-46B8-808A-85E45009FBA9}
+	EndGlobalSection
+EndGlobal
