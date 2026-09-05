@@ -18,7 +18,7 @@ namespace ExecutableProject
         {
             foreach (ComboBoxItem item in RevitVersionComboBox.Items)
             {
-                if (item.Content.ToString() == "2024")
+                if (item.Content.ToString() == "2026")
                 {
                     RevitVersionComboBox.SelectedItem = item;
                     break;
@@ -29,7 +29,7 @@ namespace ExecutableProject
         private void UpdateUI()
         {
             string pluginName = "MyRevitPlugin";
-            string revitVersion = ((ComboBoxItem)RevitVersionComboBox.SelectedItem)?.Content?.ToString() ?? "2024";
+            string revitVersion = ((ComboBoxItem)RevitVersionComboBox.SelectedItem)?.Content?.ToString() ?? "2026";
             string addinDirectory = $@"C:\ProgramData\Autodesk\Revit\Addins\{revitVersion}";
             string addinFilePath = Path.Combine(addinDirectory, $"{pluginName}.addin");
 
@@ -76,12 +76,12 @@ namespace ExecutableProject
         private void InstallButton_Click(object sender, RoutedEventArgs e)
         {
             string pluginName = "MyRevitPlugin";
-            string className = "MyRevitPlugin.Class1";
-            string description = "test";
+            string className = "MyRevitPlugin.AiRenderApplication";
+            string description = "AI-assisted architectural rendering for Revit views.";
             string vendorId = "BUMAR";
             string vendorDescription = "BUMAR,  www.bumar.site/";
             string addInId = "F0876102-D868-4344-8D1F-6044976EB990";
-            string revitVersion = ((ComboBoxItem)RevitVersionComboBox.SelectedItem)?.Content?.ToString() ?? "2024";
+            string revitVersion = ((ComboBoxItem)RevitVersionComboBox.SelectedItem)?.Content?.ToString() ?? "2026";
 
             ShowProgressBar("Installing plugin...");
 
@@ -142,7 +142,7 @@ namespace ExecutableProject
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             string pluginName = "MyRevitPlugin";
-            string revitVersion = ((ComboBoxItem)RevitVersionComboBox.SelectedItem)?.Content?.ToString() ?? "2024";
+            string revitVersion = ((ComboBoxItem)RevitVersionComboBox.SelectedItem)?.Content?.ToString() ?? "2026";
             string addinDirectory = $@"C:\ProgramData\Autodesk\Revit\Addins\{revitVersion}";
             string addinFilePath = Path.Combine(addinDirectory, $"{pluginName}.addin");
             string assemblyPath = Path.Combine(addinDirectory, pluginName, $"{pluginName}.dll");

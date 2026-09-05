@@ -33,13 +33,12 @@
                   FontSize="14" 
                   Padding="5">
 
-            <ComboBoxItem Content="2025"/>
+            <ComboBoxItem Content="2026"/>
             <ComboBoxItem Content="2024"/>
             <ComboBoxItem Content="2023"/>
             <ComboBoxItem Content="2022"/>
             <ComboBoxItem Content="2021"/>
             <ComboBoxItem Content="2020"/>
-            <!-- Add other versions as needed -->
         </ComboBox>
 
         <!-- Install Button -->
